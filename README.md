@@ -9,5 +9,5 @@ Programming language: Java.
 Using IDE: Android Studio.
 # Repository content:
  1. [Documentation](docs)  
- 1.1. [Requirements specification](docs/SRS.md)  
+ 1.1. [Requierments specification](docs/SRS.md)  
  1.2. [System design](docs/SDS.md)  
