@@ -19,7 +19,7 @@
 
 ### 2.3. User characteristics
 
-    #### 2.3.1. User classes
+    ## 2.3.1. User classes
     
     2.3.2. Application audience
     
