@@ -1,4 +1,4 @@
-# -PhotoEditor
+# PhotoEditor
 
   In PhotoEditor, it is convenient to quickly correct images. But you can also resize, crop, rotate and align images, as well as delete the background manually.
   
