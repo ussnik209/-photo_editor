@@ -7,7 +7,7 @@
 Programming language: Java.
 
 Using IDE: Android Studio.
-# Содержимое репозитория:
+# Repository content:
  1. [Documentation](docs)  
  1.1. [Requirements specification](docs/SRS.md)  
  1.2. [System design](docs/SDS.md)  
