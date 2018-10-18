@@ -1,5 +1,5 @@
 
-### 1 Introduction
+### 1. Introduction
 
 ### 1.1. Purpose
 
@@ -11,7 +11,7 @@
     
 ### 1.3. Analogs
 
-### 2 User requirements
+### 2. User requirements
 
 ### 2.1. Software interfaces
 
@@ -29,7 +29,7 @@
         
 ### 2.4. Assumptions and dependencies
 
-### 3 System requirements
+### 3. System requirements
 
 ### 3.1. Functional requirements
 
