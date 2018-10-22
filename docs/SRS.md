@@ -1,5 +1,5 @@
 ### Requirements Document
-# 1 Introduction
+# 1. Introduction
 "PhoroEditor" it is app in whitch it convenient to quickly correct images. But you can also resize, crop, rotate and align images, as well as delete the background manually.
 
 The app was built with Java and is available on Android 4.1.2  or higher.
