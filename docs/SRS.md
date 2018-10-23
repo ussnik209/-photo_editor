@@ -73,5 +73,5 @@ Adobe is seriously engaged in the development of its products for mobile operati
 This really great application was developed by Nik Software, which has been owned by Google since 2012, so Snapseed has been actively developed and maintained until now. The studio itself Nik Software has always specialized in the development of graphic editors, which is why Snapseed is a good and functional application.
 
 
-The main difference of my application from analogs is that it is created for fast processing of photos, also all functions will be immediately available in it and there will be no advertising
+#### The main difference of my application from analogs is that it is created for fast processing of photos, also all functions will be immediately available in it and there will be no advertising
 
