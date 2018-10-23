@@ -18,11 +18,11 @@
 1. It's avalible when user choose photo to edit.
 2. Then user should press on button "Filters", and the menu of filters will be opeened.
 3. User can choose one of it and save photo.
-#### 2.2 Rotate photo
+#### 2.3 Rotate photo
 1. It's avalible when user choose photo to edit.
 2. Then user should press on button "Rotate", and the photo will ratate on 180.
 3. User can save photo.
-#### 2.2 Crop photo
+#### 2.4 Crop photo
 1. It's avalible when user choose photo to edit.
 2. Then user should press on button "Crop", and change the size of visiable image
 3. User can save photo.
