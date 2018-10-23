@@ -11,19 +11,19 @@ The app was built with Java and is available on Android 4.1.2  or higher.
 ###  2.2 User Interfaces
 The GUI of the app was prototyped using mockups.
 
-## Start Screen
+#### Start Screen
 
 ![StartScreen](https://github.com/B1nvoker/-photo_editor/blob/master/Mockups/StartScreen.png)
 
-## Main Screen
+#### Main Screen
 
 ![Main Screen](https://github.com/B1nvoker/-photo_editor/blob/master/Mockups/MainScreen.png)
 
-## Edit Screen
+#### Edit Screen
 
 ![EditScreen](https://github.com/B1nvoker/-photo_editor/blob/master/Mockups/EditScreen.png)
 
-## Exit Screen
+#### Exit Screen
 
 ![SaveAndExit](https://github.com/B1nvoker/-photo_editor/blob/master/Mockups/SaveAndExit.png)
 
