@@ -11,9 +11,13 @@
 
 ### 2. Use cases
 #### 2.1 Opening image
-1. After running the app, user should choose the way of opening image.
-2. If user select opennig from file system of his/her phone, the app try to open it.
-3. Else user can make new photo using his/her phone's camera.
+1. User select opennig from file system of his phone, the app try to open it.
+
+Alternative stream A1.
+1. The app cannot find photo on user's device and return on start page.
+
+Alternative stream A2.
+1. User can select make new photo using his phone's camera on start page.
 #### 2.2 Change filters
 1. It's avalible when user choose photo to edit.
 2. Then user should press on button "Filters", and the menu of filters will be opeened.
