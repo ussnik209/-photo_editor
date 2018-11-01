@@ -1,6 +1,7 @@
 
 ## Flow of events
 
+![Flow of events](https://github.com/B1nvoker/-photo_editor/blob/master/docs/UseCaseDiagram/Usecasediagram.png)
 
 ### 1. Actors
 
