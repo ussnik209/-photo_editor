@@ -11,22 +11,14 @@
 
 ### 2. Use cases
 #### 2.1 Opening image
-1. User select opennig from file system of his phone, the app try to open it.
+1. User open image from file system of his computer, the app try to open it.
 
 Alternative stream A1.
-1. The app cannot find photo on user's device and return on start page.
-
-Alternative stream A2.
-1. User can select make new photo using his phone's camera on start page.
+1. The app can't open the file, because of some reasons.
+2. The app offer open another file.
 #### 2.2 Change filters
-1. It's avalible when user choose photo to edit.
-2. Then user should press on button "Filters", and the menu of filters will be opeened.
-3. User can choose one of it and save photo.
+1. On the top panel of the application, the user can select one of several filters.
+2. Then user should press button "Apply". 
 #### 2.3 Rotate photo
-1. It's avalible when user choose photo to edit.
-2. Then user should press on button "Rotate", and the photo will ratate on 180.
-3. User can save photo.
-#### 2.4 Crop photo
-1. It's avalible when user choose photo to edit.
-2. Then user should press on button "Crop", and change the size of visiable image
-3. User can save photo.
+2. User should press on button "Edit".
+3. And choose "Rotate" in the menu that opens.
