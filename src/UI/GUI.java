@@ -1,11 +1,16 @@
 package UI;
 
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,6 +43,8 @@ public class GUI {
     {
         items = new ArrayList<>();
     }
+
+    private List<Command> filtersCommands = new ArrayList<>();
 
     private JMenuItem cleanMenuItem;
     private JMenuItem openMenuItem;
@@ -164,6 +171,59 @@ public class GUI {
         redoMenuItem.setEnabled(false);
         rotateMenuItem.setEnabled(false);
 
+    }
+    class clearImage implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+
+            my_label.setText(null);
+
+            for (int i = 0; i < FILTER_BUTTONS.size(); i++)
+            {
+                FILTER_BUTTONS.get(i).setEnabled(false);
+
+            }
+            original.setEnabled(false);
+            items.get(0).setEnabled(false);
+            items.get(2).setEnabled(false);
+            items.get(4).setEnabled(false);
+            items.get(5).setEnabled(false);
+            items.get(6).setEnabled(false);
+            apply.setEnabled(false);
+            my_label.setIcon(null);
+            my_label.setIcon(new ImageIcon(defaultIcon));
+
+            filtersCommands.removeAll(filtersCommands);
+            my_frame.pack();
+            my_frame.repaint();
+        }
+    }
+
+
+    public void addFiles (File[] files) {
+        if (my_label.getIcon()!=defaultIcon) {
+            clearImage cl = new clearImage();
+            cl.actionPerformed(null);
+        }
+        Image image = null;
+        File f = null;
+        for (File file : files) {
+            try {
+                image = ImageIO.read(file);
+                f = file;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+        if (image != null) {
+            try {
+                //my_image = PixelImage.load(f);
+                setUp(f.toString());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
     }
 }
 
