@@ -3,7 +3,7 @@ package filters;
 
 public class SharpenFilter extends AbstractWeightedFilter
 {
-    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/sharp.png";
+    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Pictures/sharp.png";
 
     public String getFileName() {
         return  nameFile;

@@ -9,7 +9,7 @@ public class ContrastFilter extends AbstractFilter {
         super("Contrast");
     }
 
-    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/contrast.png";
+    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Pictures/contrast.png";
 
     public String getFileName() {
         return  nameFile;

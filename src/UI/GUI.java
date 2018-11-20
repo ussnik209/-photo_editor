@@ -206,7 +206,7 @@ public class GUI
 
     public void setDefaultIcon () {
         try {
-            defaultIcon = ImageIO.read(new File("C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/Photoeditor.png"));
+            defaultIcon = ImageIO.read(new File("C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Pictures/Photoeditor.png"));
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -509,7 +509,7 @@ public class GUI
 
         PixelImage temp = null, temp1 = null;
         try {
-            temp = PixelImage.load(new File("C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/original.png"));// eventually C:\\ImageTest\\pic2.jpg
+            temp = PixelImage.load(new File("C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Pictures/original.png"));// eventually C:\\ImageTest\\pic2.jpg
         }
         catch (IOException e) {
             e.printStackTrace();

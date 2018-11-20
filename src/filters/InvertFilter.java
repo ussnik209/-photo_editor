@@ -12,7 +12,7 @@ public class InvertFilter extends AbstractFilter {
         super("Invert");
     }
 
-    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/invert.png";
+    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Pictures/invert.png";
 
     public String getFileName() {
         return  nameFile;

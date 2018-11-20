@@ -5,7 +5,7 @@ import Image.PixelImage;
 public class EdgeDetectFilter extends AbstractWeightedFilter
 {
 
-    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/detect.png";
+    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Pictures/detect.png";
 
     public String getFileName() {
         return  nameFile;

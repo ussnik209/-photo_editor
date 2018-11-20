@@ -2,7 +2,7 @@ package filters;
 
 public class EdgeHighlightFilter extends AbstractWeightedFilter
 {
-    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/highlight.png";
+    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Pictures/highlight.png";
 
     public String getFileName() {
         return  nameFile;

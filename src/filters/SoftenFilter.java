@@ -2,7 +2,7 @@ package filters;
 
 public class SoftenFilter extends AbstractWeightedFilter
 {
-    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/soft.png";
+    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Pictures/soft.png";
 
     public String getFileName() {
         return  nameFile;

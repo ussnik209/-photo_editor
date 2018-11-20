@@ -5,7 +5,7 @@ import Image.PixelImage;
 
 public class BlackandwhiteFilter extends AbstractFilter
 {
-    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/bw.png";
+    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Pictures/bw.png";
 
     public String getFileName() {
         return  nameFile;

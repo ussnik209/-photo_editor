@@ -5,7 +5,7 @@ import Image.PixelImage;
 
 public class FlipHorizontalFilter extends AbstractFilter
 {
-    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/flipH.png";
+    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Pictures/flipH.png";
 
     public String getFileName() {
         return  nameFile;

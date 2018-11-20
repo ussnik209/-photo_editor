@@ -10,7 +10,7 @@ public class SepiaFilter extends AbstractFilter {
         super("Sepia");
     }
 
-    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/sepia.png";
+    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Pictures/sepia.png";
 
     public String getFileName() {
         return  nameFile;

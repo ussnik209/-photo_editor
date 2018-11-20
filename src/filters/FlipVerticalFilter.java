@@ -5,7 +5,7 @@ import Image.PixelImage;
 
 public class FlipVerticalFilter extends AbstractFilter
 {
-    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/flipV.png";
+    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Pictures/flipV.png";
 
     public String getFileName() {
         return  nameFile;

@@ -13,7 +13,7 @@ public class GrayFilter extends AbstractFilter{
         super("Gray");
     }
 
-    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/gray.png";
+    public String nameFile = "C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Pictures/gray.png";
 
     public String getFileName() {
         return  nameFile;
