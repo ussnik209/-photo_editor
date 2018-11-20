@@ -14,14 +14,14 @@ Using IDE: IntelliJ IDEA.
  
  1.2 [System design](docs/SDS.md)  
  
- 1.2 [Activity](docs/Activity/)
+ 1.3 [Activity](docs/Activity/)
  
- 1.3 [Class Diagram](https://github.com/B1nvoker/-photo_editor/tree/master/docs/Class%20Diagram)
+ 1.4 [Class Diagram](https://github.com/B1nvoker/-photo_editor/tree/master/docs/Class%20Diagram)
  
- 1.4 [Deployment Diagram](https://github.com/B1nvoker/-photo_editor/tree/master/docs/Deployment%20Diagram)
+ 1.5 [Deployment Diagram](https://github.com/B1nvoker/-photo_editor/tree/master/docs/Deployment%20Diagram)
  
- 1.5 [Mockups](docs/Mockups/)
+ 1.6 [Mockups](docs/Mockups/)
  
- 1.6 [State diagram](https://github.com/B1nvoker/-photo_editor/tree/master/docs/State%20diagram)
+ 1.7 [State diagram](https://github.com/B1nvoker/-photo_editor/tree/master/docs/State%20diagram)
  
- 1.7 [Use case](https://github.com/B1nvoker/-photo_editor/tree/master/docs/Use%20case/)
+ 1.8 [Use case](https://github.com/B1nvoker/-photo_editor/tree/master/docs/Use%20case/)
