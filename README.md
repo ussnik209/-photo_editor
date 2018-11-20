@@ -12,6 +12,8 @@ Using IDE: IntelliJ IDEA.
  
  1.1 [Requierments specification](docs/SRS.md)  
  
+ 1.2 [System design](docs/SDS.md)  
+ 
  1.2 [Activity](docs/Activity/)
  
  1.3 [Class Diagram](https://github.com/B1nvoker/-photo_editor/tree/master/docs/Class%20Diagram)
@@ -22,4 +24,4 @@ Using IDE: IntelliJ IDEA.
  
  1.6 [State diagram](https://github.com/B1nvoker/-photo_editor/tree/master/docs/State%20diagram)
  
- 1.7 [Use case](docs/Use case/)
+ 1.7 [Use case](https://github.com/B1nvoker/-photo_editor/tree/master/docs/Use%20case/)
