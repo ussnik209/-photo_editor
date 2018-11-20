@@ -109,6 +109,7 @@ public class PixelImage extends BufferedImage implements Prototype, MyImage
 
     public  PixelImage resizeImage(BufferedImage image, int width, int height) {
 
+
         ColorModel cm = image.getColorModel();
         WritableRaster raster = cm.createCompatibleWritableRaster(width, height);
         boolean isRasterPremultiplied = cm.isAlphaPremultiplied();
@@ -144,9 +145,7 @@ public class PixelImage extends BufferedImage implements Prototype, MyImage
 
     @Override
     public Prototype Clone() throws CloneNotSupportedException {
-        //deep
         PixelImage newPI = new PixelImage(getWidth(),getHeight(),getType());
-        //clone the array of Pixel
         final Pixel [][]data = getPixelData();
         Pixel [][]temp = new Pixel[data.length][data[0].length];
         for (int i = 0; i < data.length; i++) {

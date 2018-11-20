@@ -20,17 +20,18 @@ The GUI of the app was prototyped using mockups.
 
 ###  2.2 User Characteristics
 Target audience: 
-People who want to somehow change their photos for some reason, for example, crop them to remove the extra details in the frame.
+People who want to somehow change their photos for some reason, for example, make it 
+lighter or darker.
 
 ###  2.3 Assumptions and Dependencies
-You should have some photos on your computer yo use the app.
+You should have some photos on your computer еo use the app.
 
 ##  3 System Requirements
 To run "PhotoEditor" on your Windows 7 or higher is required.
 
 ###  3.1 Functional Requirements
 The app will: 
-The app should offer you to choose whether you like to open saved photo or make new using the camera of your smartphone.
+The app should offer you to open saved photo on your computer.
 ####  3.1.1 Edit Functional
 
   * Choose filters
@@ -39,7 +40,6 @@ The app should offer you to choose whether you like to open saved photo or make 
   
 ####  3.2 Non-Functional Requirements
   ##### 3.2.1 Software quality attributes
-   * Avoiding draining a device's battery
    
    * Flexible interface
    
@@ -60,5 +60,5 @@ Adobe is seriously engaged in the development of its products for mobile operati
 This really great application was developed by Nik Software, which has been owned by Google since 2012, so Snapseed has been actively developed and maintained until now. The studio itself Nik Software has always specialized in the development of graphic editors, which is why Snapseed is a good and functional application.
 
 
-#### The main difference of my application from analogs is that it is created for fast processing of photos, also all functions will be immediately available in it and there will be no advertising
+#### The main difference of my application from analogs is that it is created for high-quality photo processing, also all functions will be immediately available in it and there will be no advertising
 

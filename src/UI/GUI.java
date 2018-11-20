@@ -20,14 +20,15 @@ import Image.PixelImage;
 import Image.PixelImageProxy;
 import Strategy.Context;
 import Strategy.Filter;
+import filters.ContrastFilter;
+import filters.GrayFilter;
+import filters.InvertFilter;
+import filters.*;
 
 
 public class GUI
 {
-
-
     private Context context;
-
     {
         context = new Context();
     }
@@ -83,7 +84,7 @@ public class GUI
     public PixelImage my_image1;
 
     public GUI() {
-        FILTER_BUTTONS = new ArrayList<JButton>();
+        FILTER_BUTTONS = new ArrayList<>();
         apply = new JButton("Apply");
         original = new JButton("Original");
         my_panel1 = new JPanel();
@@ -92,7 +93,7 @@ public class GUI
 
     public void start() throws CloneNotSupportedException
     {
-        my_frame.setTitle("Photo Editor by SaliyPhoto");
+        my_frame.setTitle("Photo Editor");
         my_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         my_frame.setVisible(true);
         my_label.addMouseListener(new MouseListener() {
@@ -147,8 +148,6 @@ public class GUI
             }
         });
 
-
-
         addMenuBar();
         addButtonsTop();
         setDefaultIcon();
@@ -177,7 +176,6 @@ public class GUI
         }
         if (image != null) {
             try {
-                //my_image = PixelImage.load(f);
                 setUp(f.toString());
             } catch (IOException e) {
                 e.printStackTrace();
@@ -191,9 +189,24 @@ public class GUI
         my_label.setTransferHandler(my_imgTransf);
     }
 
+    public void setFiltersCommands () {
+
+        filtersCommands.add(new ConcreteCommand(new EdgeDetectFilter()));
+        filtersCommands.add(new ConcreteCommand(new EdgeHighlightFilter()));
+        filtersCommands.add(new ConcreteCommand(new FlipHorizontalFilter()));
+        filtersCommands.add(new ConcreteCommand(new FlipVerticalFilter()));
+        filtersCommands.add(new ConcreteCommand(new BlackandwhiteFilter()));
+        filtersCommands.add(new ConcreteCommand(new SharpenFilter()));
+        filtersCommands.add(new ConcreteCommand(new SoftenFilter()));
+        filtersCommands.add(new ConcreteCommand(new ContrastFilter()));
+        filtersCommands.add(new ConcreteCommand(new GrayFilter()));
+        filtersCommands.add(new ConcreteCommand(new InvertFilter()));
+        filtersCommands.add(new ConcreteCommand(new SepiaFilter()));
+    }
+
     public void setDefaultIcon () {
         try {
-            defaultIcon = ImageIO.read(new File("Photoeditor.png"));
+            defaultIcon = ImageIO.read(new File("C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/Photoeditor.png"));
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -294,7 +307,7 @@ public class GUI
                 e1.printStackTrace();
             }
             my_image = my_image.rotate(my_image.getWidth(),my_image.getHeight());
-            my_image.rotated= my_image.rotated?false:true;
+            my_image.rotated= !my_image.rotated;
             my_label.setIcon(new ImageIcon(my_image));
             my_label.repaint();
         }
@@ -442,39 +455,41 @@ public class GUI
 
     private void createButtonApply()
     {
-        apply.addActionListener(new ActionListener()
-        {
-            /**
-             * Handles an ActionEvent for the apply button.
-             *
-             * @param the_event The event.
-             */
-            public void actionPerformed(final ActionEvent the_event)
-            {
-
-                my_image = cloned;
-                cloned = null;
-                my_label.setIcon(new ImageIcon(my_image));
-                my_label.repaint();
-                for (Command com: filtersCommands) {
-                    if (com.getFilt().getClass() == context.getStrategy().getClass())
-                        invoker.addCommand(com);
-                }
-                //check availability of undo and redo items
-                if (!invoker.isPossibleRedo())
-                    items.get(5).setEnabled(false);
-                else items.get(5).setEnabled(true);
-                if (!invoker.isPossibleUndo())
-                    items.get(4).setEnabled(false);
-                else items.get(4).setEnabled(true);
-                apply.setEnabled(false);
+        apply.addActionListener(the_event -> {
+            my_image = cloned;
+            cloned = null;
+            my_label.setIcon(new ImageIcon(my_image));
+            my_label.repaint();
+            for (Command com: filtersCommands) {
+                if (com.getFilt().getClass() == context.getStrategy().getClass())
+                    invoker.addCommand(com);
             }
+            if (!invoker.isPossibleRedo())
+                items.get(5).setEnabled(false);
+            else items.get(5).setEnabled(true);
+            if (!invoker.isPossibleUndo())
+                items.get(4).setEnabled(false);
+            else items.get(4).setEnabled(true);
+            apply.setEnabled(false);
         });
         apply.setEnabled(false);
     }
 
-    private void addButtonsTop() throws CloneNotSupportedException
-    {
+    private void addButtonsTop() {
+        createButtonOriginal();
+        createButtonFilter(new ContrastFilter());
+        createButtonFilter(new GrayFilter());
+        createButtonFilter(new FlipHorizontalFilter());
+        createButtonFilter(new FlipVerticalFilter());
+        createButtonFilter(new BlackandwhiteFilter());
+        createButtonFilter(new SharpenFilter());
+        createButtonFilter(new SoftenFilter());
+        createButtonFilter(new EdgeDetectFilter());
+        createButtonFilter(new EdgeHighlightFilter());
+        createButtonFilter(new InvertFilter());
+        createButtonFilter(new SepiaFilter());
+
+
         my_panel1.add(original);
         for (int i = 0; i < FILTER_BUTTONS.size(); i++)
         {
@@ -490,12 +505,11 @@ public class GUI
         my_frame.pack();
     }
 
-    private void createButtonOriginal() throws CloneNotSupportedException
-    {
+    private void createButtonOriginal() {
 
         PixelImage temp = null, temp1 = null;
         try {
-            temp = PixelImage.load(new File("original.png"));// eventually C:\\ImageTest\\pic2.jpg
+            temp = PixelImage.load(new File("C:/Users/Vadim/IdeaProjects/-photoeditor/-photo_editor/src/Image/original.png"));// eventually C:\\ImageTest\\pic2.jpg
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -505,27 +519,15 @@ public class GUI
         original.setIcon(new ImageIcon(temp1));
         original.setHorizontalTextPosition(SwingConstants.CENTER);
         original.setVerticalTextPosition(SwingConstants.TOP);
-
-        //button.setSize(50,50);
-        original.addActionListener(new ActionListener()
-        {
-            /**
-             * Handles an ActionEvent for button Original.
-             *
-             * @param the_event The event.
-             */
-            public void actionPerformed(final ActionEvent the_event)
-            {
-                apply.setEnabled(false);
-                my_label.setIcon(new ImageIcon(main_image));
-                my_label.repaint();
-            }
+        original.addActionListener(the_event -> {
+            apply.setEnabled(false);
+            my_label.setIcon(new ImageIcon(main_image));
+            my_label.repaint();
         });
         original.setEnabled(false);
     }
 
-    private void createButtonFilter(final Filter the_object) throws CloneNotSupportedException
-    {
+    private void createButtonFilter(final Filter the_object) {
         JButton button = new JButton(the_object.getDescription());
 
         PixelImage temp = null, temp1 = null;
@@ -541,25 +543,16 @@ public class GUI
         button.setHorizontalTextPosition(SwingConstants.CENTER);
         button.setVerticalTextPosition(SwingConstants.TOP);
         FILTER_BUTTONS.add(button);
-        button.addActionListener(new ActionListener()
-        {
-            /**
-             * Handles an ActionEvent for the filter buttons.
-             *
-             * @param the_event The event.
-             */
-            public void actionPerformed(final ActionEvent the_event)
-            {
-                try {
-                    context.setStrategy(the_object);
-                    cloned = (PixelImage) my_image.Clone();
-                    context.execute(cloned);
-                    my_label.setIcon(new ImageIcon(cloned));
-                    my_label.repaint();
-                    apply.setEnabled(true);
-                } catch (CloneNotSupportedException e) {
-                    e.printStackTrace();
-                }
+        button.addActionListener(the_event -> {
+            try {
+                context.setStrategy(the_object);
+                cloned = (PixelImage) my_image.Clone();
+                context.execute(cloned);
+                my_label.setIcon(new ImageIcon(cloned));
+                my_label.repaint();
+                apply.setEnabled(true);
+            } catch (CloneNotSupportedException e) {
+                e.printStackTrace();
             }
         });
         button.setEnabled(false);

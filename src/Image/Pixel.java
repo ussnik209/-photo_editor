@@ -1,24 +1,23 @@
 package Image;
 
-/**
- * Created by olgasaliy on 21.04.16.
- * Represents a pixel (an RGB value).
- */
 public class Pixel implements Prototype
 {
     public static final int NUM_CHANNELS = 3;
+
     public static final int MIN_COLOR_VALUE = 0;
+
     public static final int MAX_COLOR_VALUE = 255;
 
     private int my_red;
+
     private int my_green;
+
     private int my_blue;
 
     public Pixel()
     {
         this(MIN_COLOR_VALUE, MIN_COLOR_VALUE, MIN_COLOR_VALUE);
     }
-
 
     public Pixel(final int the_red, final int the_green, final int the_blue)
     {
@@ -27,22 +26,20 @@ public class Pixel implements Prototype
         my_blue = the_blue;
     }
 
-
     public int getRed()
     {
-
         return my_red;
     }
+
     public int getGreen()
     {
-
         return my_green;
     }
+
     public int getBlue()
     {
         return my_blue;
     }
-
 
     public void setRed(final int the_red) throws IllegalArgumentException
     {
@@ -69,6 +66,7 @@ public class Pixel implements Prototype
             throw new IllegalArgumentException("Invalid color value: " + the_value);
         }
     }
+
     @Override
     public Prototype Clone() throws CloneNotSupportedException {
         return new Pixel(my_red, my_green, my_blue);
