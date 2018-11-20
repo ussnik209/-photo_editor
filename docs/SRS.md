@@ -9,14 +9,29 @@
 ###  2.1 User Interfaces
 The GUI of the app was prototyped using mockups.
 
+#### Start Screen
+
+![Start Screen](https://github.com/B1nvoker/-photo_editor/blob/master/docs/Mockups/StartScreen.png)
+
+#### Open Image Screen
+
+![Open Image Screen](https://github.com/B1nvoker/-photo_editor/blob/master/docs/Mockups/OpenImageScreen.png)
+
+#### File Menu Screen
+
+![File Menu Screen](https://github.com/B1nvoker/-photo_editor/blob/master/docs/Mockups/FileMenuScreen.png)
+
+#### Edit Rotate Screen
+
+![Edit Rotate Screen](https://github.com/B1nvoker/-photo_editor/blob/master/docs/Mockups/EditRotateScreen.png)
+
 #### Edit Screen
 
 ![Edit Screen](https://github.com/B1nvoker/-photo_editor/blob/master/docs/Mockups/Editscreen.png)
 
-#### File Menu Screen
+#### Save Image Screen
 
-![File Menu Scree](https://github.com/B1nvoker/-photo_editor/blob/master/docs/Mockups/FileMenuScreen.png)
-
+![Save Image Screen](https://github.com/B1nvoker/-photo_editor/blob/master/docs/Mockups/SaveImageScreen.png)
 
 ###  2.2 User Characteristics
 Target audience: 
