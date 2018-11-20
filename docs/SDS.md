@@ -1,7 +1,7 @@
 
 ## Flow of events
 
-![Flow of events](https://github.com/B1nvoker/-photo_editor/blob/master/docs/Use%20case/usecase.png)
+![Flow of events](https://github.com/B1nvoker/-photo_editor/blob/master/docs/Use%20case/Use%20Case%20Diagram1.png)
 
 ### 1. Actors
 
