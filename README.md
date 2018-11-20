@@ -9,10 +9,17 @@ Programming language: Java.
 Using IDE: IntelliJ IDEA.
 # Repository content:
  1 [Documentation](docs)  
+ 
  1.1 [Requierments specification](docs/SRS.md)  
+ 
  1.2 [Activity](docs/Activity/)
- 1.3 [Class Diagram](docs/Class Diagram/)
- 1.4 [Deployment Diagram](docs/Deployment Diagram/)
+ 
+ 1.3 [Class Diagram](https://github.com/B1nvoker/-photo_editor/tree/master/docs/Class%20Diagram)
+ 
+ 1.4 [Deployment Diagram](https://github.com/B1nvoker/-photo_editor/tree/master/docs/Deployment%20Diagram)
+ 
  1.5 [Mockups](docs/Mockups/)
- 1.6 [State diagram](docs/State diagram/)
+ 
+ 1.6 [State diagram](https://github.com/B1nvoker/-photo_editor/tree/master/docs/State%20diagram)
+ 
  1.7 [Use case](docs/Use case/)
