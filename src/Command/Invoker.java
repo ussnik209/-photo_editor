@@ -13,7 +13,7 @@ public class Invoker {
 
     private static int current;
 
-    public Invoker (PixelImage orig){
+    public Invoker (PixelImage orig) {
         original = orig;
         current = -1;
     }
@@ -29,7 +29,7 @@ public class Invoker {
 
     }
 
-    public void runToPrevious (PixelImage image){
+    public void runToPrevious (PixelImage image) {
         image.setPixelData(original.getPixelData());
         try {
             if (!isPossibleUndo())
