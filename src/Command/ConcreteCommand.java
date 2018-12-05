@@ -5,7 +5,7 @@ import Strategy.Filter;
 
 public class ConcreteCommand extends Command {
 
-    public ConcreteCommand (Filter f){
+    public ConcreteCommand (Filter f) {
         super(f);
     }
 
