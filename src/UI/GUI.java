@@ -218,7 +218,7 @@ public class GUI
         my_label.setEnabled(true);
     }
 
-    private void addMenuBar (){
+    private void addMenuBar () {
 
         menuBar = new JMenuBar();
 
