@@ -7,7 +7,7 @@ import filters.AbstractFilter;
 import java.awt.image.BufferedImage;
 
 
-public class GrayFilter extends AbstractFilter{
+public class GrayFilter extends AbstractFilter {
 
     public GrayFilter() {
         super("Gray");
