@@ -27,3 +27,5 @@ Using IDE: IntelliJ IDEA.
  1.8 [Class Diagram with patterns](https://github.com/B1nvoker/-photo_editor/tree/master/docs/Class%20Diagram%20with%20patterns)
  
  1.9 [Deployment Diagram](https://github.com/B1nvoker/-photo_editor/tree/master/docs/Deployment%20Diagram)
+ 
+ 1.10 [Test plan](https://github.com/B1nvoker/-photo_editor/blob/master/docs/TestPlan.md)
